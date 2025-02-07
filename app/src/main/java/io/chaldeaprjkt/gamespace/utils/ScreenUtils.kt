@@ -83,8 +83,8 @@ class ScreenUtils @Inject constructor(private val context: Context) {
         }
         remoteRecording = null
         if (isGestureLocked) {
-            Settings.Secure.putInt(context.contentResolver,
-                    "lock_immersive_sysui", 0)
+            Settings.System.putInt(context.contentResolver,
+                    "lock_gesture_status", 0)
             isGestureLocked = false
         }
     }
@@ -112,8 +112,8 @@ class ScreenUtils @Inject constructor(private val context: Context) {
     var lockGesture = false
         get() = isGestureLocked
         set(enable) {
-            Settings.Secure.putInt(context.contentResolver,
-                    "lock_immersive_sysui", if (enable) 1 else 0)
+            Settings.System.putInt(context.contentResolver,
+                    "lock_gesture_status", if (enable) 1 else 0)
             field = enable
             isGestureLocked = enable
         }
