@@ -110,4 +110,8 @@
     <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
     <string name="custom_seekbar_default_value_is_set">Default value is set</string>
     <string name="gamespace_menu_opacity_title">Overlay menu opacity level</string>
+    
+    <!-- Bypass charging -->
+    <string name="bypass_charge_enabled_summary">Bypass charging</string>
+    <string name="bypass_charge_enabled_title">Enable bypass charging while playing games</string>
 </resources>
