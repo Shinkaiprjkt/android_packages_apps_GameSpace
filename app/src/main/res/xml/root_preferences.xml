@@ -28,7 +28,7 @@
         android:key="in_game_preferences"
         android:title="@string/in_game_preferences_title">
 
-        <SwitchPreferenceCompat
+        <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="gamespace_danmaku_notification_mode"
             android:summary="@string/danmaku_notification_mode_summary"
@@ -50,41 +50,41 @@
             android:summary="%s"
             android:title="@string/ringer_mode_title" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="gamespace_suppress_fullscreen_intent"
             android:summary="@string/suppress_fullscreen_intent_summary"
             android:title="@string/suppress_fullscreen_intent_title" />
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="bypass_charge_enabled"
             android:summary="@string/bypass_charge_enabled_title"
             android:title="@string/bypass_charge_enabled_summary"
             android:defaultValue="false" />
 
-        <SwitchPreferenceCompat
+        <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="gamespace_auto_brightness_disabled"
             android:summary="@string/auto_brightness_disabled_summary"
             android:title="@string/auto_brightness_disabled_title" />
 
-        <SwitchPreferenceCompat
+        <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="gamespace_tfgesture_disabled"
             android:summary="@string/three_screenshot_disabled_summary"
             android:title="@string/three_screenshot_disabled_title" />
 
-        <SwitchPreferenceCompat
+        <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="gamespace_stay_awake"
             android:summary="@string/stay_awake_summary"
             android:title="@string/stay_awake_title" />
 
-        <SwitchPreferenceCompat
+        <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="gamespace_lock_gesture"
             android:title="@string/lock_gesture_title" />
             
-        <com.crdroid.settings.preferences.CustomSeekBarPreference
+        <com.android.settings.custom.preference.CustomSeekBarPreference
             android:key="gamespace_menu_opacity"
             android:title="@string/gamespace_menu_opacity_title"
             android:defaultValue="100"
