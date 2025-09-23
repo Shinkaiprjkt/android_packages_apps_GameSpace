@@ -32,7 +32,6 @@
                     android:gravity="center"
                     android:drawableStart="@drawable/memory"
                     android:drawablePadding="2dp"
-                    android:fontFamily="@*android:string/config_lightFontFamily"
                     android:textColor="?android:attr/colorAccent"
                     android:textSize="11sp" />
                     
